@@ -1,3 +1,40 @@
-#profile-pic {
-    border-radius: 200px;
+/* site-wide */
+.site-header {
+    margin-bottom: 100px;
+}
+
+nav {
+    font-size: 24px;
+}
+
+a.about {
+    margin-right: 40px;
+}
+
+/*nav a:active {
+    text-decoration: underline;
+}*/
+
+footer {
+    margin-top: 200px;
+}
+
+/* Contact links in the footer*/
+.contact-links {
+    margin-left: 45.5%;
+    margin-bottom: 15px;
+}
+
+/* About/ Home page */
+#about-section p {
+    font-size: 18px;
+}
+
+/* Work page */
+.work-samples {
+    margin-bottom: 100px;
+}
+
+.project-img {
+    border: 1px solid black;
 }
