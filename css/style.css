@@ -3,20 +3,26 @@
     margin-bottom: 100px;
 }
 
-nav {
-    font-size: 24px;
+ul {
+    font-size: 22px;
+    margin-top: 15px;
 }
 
-a.about {
+a {
+    color: #999;
+}
+
+.about {
     margin-right: 40px;
 }
 
-/*nav a:active {
+.active {
     text-decoration: underline;
-}*/
+}
 
 footer {
     margin-top: 200px;
+    margin-bottom: 30px;
 }
 
 /* Contact links in the footer*/
@@ -28,6 +34,17 @@ footer {
 /* About/ Home page */
 #about-section p {
     font-size: 18px;
+    line-height: 1.5;
+}
+
+.img-circle {
+    float: left;
+    margin-right: 2em;
+    -webkit-shape-outside: circle();
+    -moz-shape-outside: circle();
+    shape-oustide: circle();
+    -webkit-clip-path: circle();
+    -moz-clip-path: circle();
 }
 
 /* Work page */
