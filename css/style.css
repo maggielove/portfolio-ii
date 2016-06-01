@@ -1,6 +1,17 @@
 /* site-wide */
+body {
+    background-image: url('../images/geometry/geometry.png');
+}
+
 .site-header {
     margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.site-header h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #ff0080;
 }
 
 ul {
@@ -12,12 +23,21 @@ a {
     color: #999;
 }
 
+.list-inline > li > a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
 .about {
     margin-right: 40px;
 }
 
 .active {
     text-decoration: underline;
+}
+
+p {
+    font-family: 'Istok Web', sans-serif;
 }
 
 footer {
