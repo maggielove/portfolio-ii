@@ -11,7 +11,7 @@ body {
 .site-header h1 {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    color: #ff0080;
+    color: #00b386;
 }
 
 ul {
@@ -20,7 +20,11 @@ ul {
 }
 
 a {
-    color: #999;
+    color: #666666;
+}
+
+a:hover {
+    color: #0c9;
 }
 
 .list-inline > li > a {
@@ -51,6 +55,7 @@ footer {
     margin-bottom: 15px;
 }
 
+
 /* About/ Home page */
 #about-section p {
     font-size: 18px;
@@ -72,6 +77,21 @@ footer {
     margin-bottom: 100px;
 }
 
-.project-img {
-    border: 1px solid black;
+.work-sample {
+    padding: 0;
+    border: 1px solid #000;
+    width: 502px;
+    height: 272px;
+    background-color: rgba(242, 242, 242, 0.7)
+}
+
+.work-sample a {
+    color: #00b386;
+}
+
+.work-info {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 20px;
+    /*background-color: yellow;*/
 }
