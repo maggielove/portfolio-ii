@@ -45,12 +45,13 @@ p {
 }
 
 footer {
-    margin-top: 200px;
+    margin-top: 170px;
     margin-bottom: 50px;
 }
 
 p.copyright {
     padding-left: 50px;
+    margin-bottom: 20px;
 }
 
 /* Contact links in the footer*/
@@ -103,19 +104,10 @@ p.copyright {
 
 /*** Media Queries ***/
 
-/* iPhone retina */
-@media only screen and (min-width: 320px){
-    .work-sample {
-        height: 195px;
-    }
-    .work-info {
-        margin-top: 0;
-        padding: 10px;
-    }
-}
-
 /* iPhone 5 portrait */
-@media only screen and (min-width: 320px){
+@media only screen
+and (min-width: 320px)
+and (max-width: 568px){
     .work-sample {
         height: 195px;
     }
@@ -131,17 +123,104 @@ p.copyright {
     }
 }
 
+/* iPhone 5 landscape */
+@media only screen
+and (min-width: 320px)
+and (max-width: 568px)
+and (orientation: landscape){
+    .work-sample {
+        width: 90%;
+        margin-left: 5%;
+        height: 250px;
+    }
+    .contact-links {
+        margin-left: 33%;
+    }
+    p.copyright {
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+}
+
 /* iPhone 6 portrait */
-@media only screen and (min-width: 375px){
+@media only screen
+and (min-width: 375px)
+and (max-width: 667px){
     p.copyright {
         padding-left: 0px;
     }
 }
 
+/* iPhone 6 landscape */
+@media only screen
+and (min-width: 375px)
+and (max-width: 667px)
+and (orientation: landscape){
+    .work-sample {
+        height: 300px;
+    }
+    p.copyright {
+        padding-right: 65px;
+    }
+}
+
+/* iPhone 6+ portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+      .contact-links {
+          margin-left: 29%;
+      }
+      p.copyright {
+          padding-right: 10px;
+      }
+}
+
+/* iPhone 6+ landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape){
+      .work-sample {
+          height: 320px;
+      }
+      .contact-links {
+          margin-left: 38%;
+      }
+      p.copyright {
+          padding-right: 10px;
+      }
+  }
+
+ /* Galaxy S5 */
+ @media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+      p.copyright {
+          padding-left: 0px;
+      }
+}
+
+ /* Nexus 6P */
+ @media screen
+  and (min-device-width: 420px)
+  and (max-device-width: 773px) {
+      .work-sample {
+          width: 80%;
+          margin-left: 10%;
+      }
+      p.copyright {
+          padding-left: 0px;
+      }
+}
+
 /* small devices, tablets */
 @media only screen and (min-width: 768px){
     .work-sample {
-        height: 250px;
+        height: 300px;
     }
     .contact-links {
         margin-left: 35.5%;
@@ -157,17 +236,24 @@ p.copyright {
         height: 272px;
     }
     .contact-links {
-        margin-left: 39%;
+        margin-left: 47%;
     }
     p.copyright {
-        padding-right: 140px;
+        padding-left: 140px;
+        margin-bottom: 50px;
     }
 }
 
-/* large devices, wide screens */
+/* large devices  (Macbook Air), wide screens */
 @media only screen and (min-width: 1200px){
     .work-sample{
         height: 272px;
     }
-
+    .contact-links {
+        margin-left: 45%;
+    }
+    p.copyright {
+        padding-left: 90px;
+        margin-bottom: 50px;
+    }
 }
